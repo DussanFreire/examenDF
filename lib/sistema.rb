@@ -31,5 +31,8 @@ class Sistema
         if ciudad=="AL"
             return num*0.04
         end
+        if ciudad=="CA"
+            return num*0.03
+        end
     end
 end
