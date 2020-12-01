@@ -10,7 +10,10 @@ RSpec.describe Sistema do
         @sistema= Sistema.new
         expect(@sistema.obtenerDescuento(2000)).to eq(60)
         expect(@sistema.obtenerDescuento(3000)).to eq(150)
-        #expect(@sistema.obtenerDescuento(4000)).to eq(60)
+        expect(@sistema.obtenerDescuento(10000)).to eq(1000)
     end
-   
+    it "deberia devolver los  impuestos adecuados" do
+        @sistema= Sistema.new
+        expect(@sistema.obtenerImpuesto(100,"UT")). to eq(6)
+    end
 end

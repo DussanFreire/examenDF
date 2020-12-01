@@ -18,5 +18,9 @@ class Sistema
         
         return 100
     end
-    
+    def obtenerImpuesto(num,ciudad)
+        if ciudad=="UT"
+            return 6
+        end
+    end
 end
