@@ -1,6 +1,9 @@
 class Sistema
     def obtenerDescuento(precio)
-        return 97
+        if precio <= 1000
+            return 0.03*precio
+        end
+        return 60
     end
     
 end
