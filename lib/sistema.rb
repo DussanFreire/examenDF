@@ -37,8 +37,8 @@ class Sistema
     end
     def calcular_precio_final(cantidad_items, precio_unitario, estado)
         precio=cantidad_items*precio_unitario 
-        precio -=-obtenerDescuento(precio)
-        precio +=obtenerImpuesto(precio,estado)
+        precio = precio -obtenerDescuento(precio)
+        precio =precio +obtenerImpuesto(precio,estado)
         return precio
     end
 end

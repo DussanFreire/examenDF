@@ -23,6 +23,6 @@ RSpec.describe Sistema do
 
     it "Deberia calcula el precio final" do
         @sistema= Sistema.new
-        expect(@sistema.calcular_precio_final(1, 100, "CA")). to eq(206.0)
+        expect(@sistema.calcular_precio_final(1, 1000, "CA")). to eq(999.1)
     end
 end
