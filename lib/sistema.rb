@@ -20,7 +20,13 @@ class Sistema
     end
     def obtenerImpuesto(num,ciudad)
         if ciudad=="UT"
-            return 6
+            return num*0.06
+        end
+        if ciudad=="NV"
+            return num*0.08
+        end
+        if ciudad=="TX"
+            return num*0.065
         end
     end
 end
