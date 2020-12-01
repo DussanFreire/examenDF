@@ -17,5 +17,6 @@ RSpec.describe Sistema do
         expect(@sistema.obtenerImpuesto(100,"UT")). to eq(6)
         expect(@sistema.obtenerImpuesto(100,"NV")). to eq(8)
         expect(@sistema.obtenerImpuesto(100,"TX")). to eq(6.5)
+        expect(@sistema.obtenerImpuesto(100,"AL")). to eq(4)
     end
 end
