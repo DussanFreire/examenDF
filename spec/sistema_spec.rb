@@ -20,4 +20,9 @@ RSpec.describe Sistema do
         expect(@sistema.obtenerImpuesto(100,"AL")). to eq(4)
         expect(@sistema.obtenerImpuesto(100,"CA")). to eq(3)
     end
+
+    it "Deberia calcula el precio final" do
+        @sistema= Sistema.new
+        expect(@sistema.calcular_precio_final(1, 100, "CA")). to eq(206.0)
+    end
 end
